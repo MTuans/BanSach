@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+<header>
+     <!-- MENU-START -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo bên trái -->
+            <a class="navbar-brand" href="index.html">Logo</a>
+
+            <!-- Nút Toggle cho thiết bị di động -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar nội dung -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Các mục ở giữa khi ở màn hình lớn -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link home" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sanpham.html">Sản Phẩm <i class="fa-solid fa-angle-down arrow"></i> </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sản Phẩm Mới</a></li>
+                            <li><a class="dropdown-item" href="#">Sản Phẩm Bán Chạy</a></li>
+                            <li><a class="dropdown-item" href="#">Sản Phẩm Khuyến Mãi & Ưu Đãi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bài Viết</a>
+                    </li>
+                </ul>
+
+                <!-- Thanh tìm kiếm và các nút bên phải -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Thanh tìm kiếm -->
+                    <li class="nav-item me-2">
+                        <form class="d-flex">
+                            <input class="form-control search-input" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                            <i class="fa fa-search search-icon"></i>
+                        </form>
+                    </li>
+                    <!-- Nút giỏ hàng -->
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary cart-button"> <a style="text-decoration: none; color: white;" href="giohang.html"> Giỏ hàng</a><i class="fa-solid fa-cart-shopping"></i></button>
+                    </li>
+                    <!-- Tài khoản và các nút đăng nhập/đăng ký -->
+                    <li class="nav-item dropdown ms-3">
+                        <button onclick="window.location.href='taikhoan.html';" class="btn btn-outline-secondary account-button dropdown-toggle" type="button" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tài khoản <i class="fa-solid fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="dangky.html">Đăng Ký</a></li>
+                            <li><a class="dropdown-item" href="dangnhap.html">Đăng Nhập</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- MENU - END -->
+</header>
+    <main class="wrap">
+
+
+    <div class="dieuhuong">
+        <a href="index.html" >Trang chủ</a> /
+        <a href="lienhe.html" id="back">Liên hệ</a>
+    </div>
+    <div class="lienhe">
+        <div class="bannerlienhe">
+            <h2 id="textlienhe">Liên hệ với chúng tôi</h2>
+            <img src="img/IMG_DA1/baner/shutterstock-413397052.webp" alt="">
+        </div>
+        <div class="camket">
+        <p>Chúng tôi cam kết đáp ứng nhanh chóng nhu cầu của khách hàng về sách để đọc hàng ngày, chọn sách làm quà tặng cá nhân và doanh nghiệp, quà tặng dịp lễ, Tết và mọi nhu cầu liên quan đến sách. Từ sách văn học, sách kinh doanh, sách kỹ năng, đến sách khoa học, nghệ thuật, chúng tôi đều có đầy đủ.</p>
+        <p>Chúng tôi muốn lấng nghe ý kiến ​​của bạn! Hãy gửi tin nhắn cho chúng tôi qua biểu mẫu liên hệ bên dưới, qua email  hoặc qua các ứng dụng nhắn tin.</p>
+        </div>
+        <br>
+        <div class="formlh">
+        <h4 style="color: #8B4513; font-weight: 700;">Form liên hệ</h4>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Username</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Ghi chú</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="ggmap">
+            <img src="img/IMG_DA1/bai viet/voi-nhung-cong-cu-rat-huu-ich-ban-da-co-the-in-truc-tiep-ngay-tren-google-map.jpg" alt="">
+        </div>
+        <button id="lienhebtn">Gửi</button>
+            <h5 id="textcauhoithuonggap">Câu hỏi thường gặp về sản phẩm!</h5>
+            <div class="caccauhoithuonggap">
+                <div class="caccauhoi1">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Sản phẩm của chúng tôi là gì?                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Giá của sản phẩm là bao nhiêu?                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Tôi có thể đặt hàng trực tuyến không?                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end div caccauhoi1 -->
+
+            <div class="caccauhoi2">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Thời gian giao hàng mất bao lâu?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Phí vận chuyển được tính như thế nào?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Tôi có thể theo dõi đơn hàng của mình không?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!-- end div caccauhoi2 -->
+
+        </div>
+            <!-- end div caccauhoithuonggap -->
+
+            <div class="theodoi">
+                <h5 id="texttheodoi">Theo dõi</h5>
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col boxtheodoi">
+                        <i class="fa-solid fa-location-dot"></i><br>
+                        <h6 id="textboxtheodoi">Địa chỉ</h6>
+                        <div class="diachi">Quận 12, Thành Phố Hồ Chí Minh</div>
+                      </div>
+                      <div class="col boxtheodoi">
+                        <i class="fa-solid fa-phone"></i><br>
+                        <h6 id="textboxtheodoi">Điện thoại</h6>
+                        <div class="diachi">0969366227</div>
+                      </div>
+                      <div class="col boxtheodoi">
+                        <i class="fa-solid fa-envelope"></i><br>
+                        <h6 id="textboxtheodoi">Email</h6>
+                        <div class="diachi">tiennttps39163@gmail.com</div>
+                      </div>
+                      <div class="col boxtheodoi">
+                        <h6 id="textboxtheodoi">Theo dõi</h6>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-discord"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    </div>
+</main>
+<footer>
+  <!-- các icon và dịch vụ footer  -->
+  <div class="container">
+      <div class="row row-cols-4">
+          <div class="service">
+              <i class="fa-solid fa-truck-fast service-icon"></i>
+              <div class="service-infor">
+                  <p class="service-title">Free shipping</p> <br>
+                  <p class="service-st">Miễn phí vận chuyển</p>
+                  <!-- st là small text  -->
+              </div>
+          </div>
+          <div class="service">
+              <i class="fa-solid fa-square-phone service-icon"></i>
+              <div class="service-infor">
+                  <p class="service-title">24/7 support</p> <br>
+                  <p class="service-st">Hỗ trợ 24/7</p>
+                  <!-- st là small text  -->
+              </div>
+          </div>
+          <div class="service">
+              <i class="fa-solid fa-square-check service-icon"></i>
+              <div class="service-infor">
+                  <p class="service-title">Good quality</p> <br>
+                  <p class="service-st">Chất lượng tốt</p>
+                  <!-- st là small text  -->
+              </div>
+          </div>
+          <div class="service">
+              <i class="fa-brands fa-cc-visa service-icon"></i>
+              <div class="service-infor">
+                  <p class="service-title">Easy payment</p> <br>
+                  <p class="service-st">Thanh toán dễ dàng</p>
+                  <!-- st là small text  -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--end  các icon và dịch vụ footer  -->
+
+  <hr>
+
+  <!-- thông tin chi tiết ở footer  -->
+  <div class="container">
+      <div class="row row-cols-4">
+          <!-- logo  -->
+          <div class="footer-infor">
+              <p class="service-logo">logo</p>
+          </div>
+          <!-- end logo  -->
+
+          <!-- liên kết  -->
+          <div class="footer-infor">
+              <div class="service-title">Links</div>
+              <a class="service-link" href="#">Giới thiệu</a>
+              <br>
+              <a class="service-link" href="lienhe.html">Liên Hệ</a>
+              <br>
+              <a class="service-link" href="">Bài viết</a>
+              <br>
+              <a class="service-link" href="sanpham.html">Sản phẩm</a>
+          </div>
+          <div class="footer-infor">
+              <div class="service-title">Danh mục</div>
+              <a class="service-link" href="">SP mới</a>
+              <br>
+              <a class="service-link" href="">SP bán chạy</a>
+              <br>
+              <a class="service-link" href="">SP khuyến mãi và ưu đãi</a>
+              <br>
+          </div>
+          <div class="footer-infor">
+              <div class="service-title">Thông tin</div>
+              <a class="service-link" href="">Điện thoại: 0888.303.384</a>
+              <br>
+              <a class="service-link" href="">Email: tiennttps39163@gmail.com</a>
+
+              <!-- các icon theo dõi  -->
+              <div class="service-follow">
+                  <div class="service-title">Theo dõi</div>
+                  <!-- icon các mạng xã hội  -->
+                    <a class="service-link" href="#"><i class="fa-brands fa-square-facebook service-social-icon"></i></a>
+                    <a class="service-link" href="#"><i class="fa-brands fa-square-youtube service-social-icon"></i></a>
+                    <a class="service-link" href="#"><i class="fa-brands fa-telegram service-social-icon"></i></a>
+                    <a class="service-link" href="#"><i class="fa-brands fa-discord service-social-icon"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="foot">
+      Copyright 2024  @ FineWines
+  </div>
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

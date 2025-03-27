@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+<header>
+     <!-- MENU-START -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo bên trái -->
+            <a class="navbar-brand" href="index.html">Logo</a>
+
+            <!-- Nút Toggle cho thiết bị di động -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar nội dung -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Các mục ở giữa khi ở màn hình lớn -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link home" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sanpham.html">Sản Phẩm <i class="fa-solid fa-angle-down arrow"></i> </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sản Phẩm Mới</a></li>
+                            <li><a class="dropdown-item" href="#">Sản Phẩm Bán Chạy</a></li>
+                            <li><a class="dropdown-item" href="#">Sản Phẩm Khuyến Mãi & Ưu Đãi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bài Viết</a>
+                    </li>
+                </ul>
+
+                <!-- Thanh tìm kiếm và các nút bên phải -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Thanh tìm kiếm -->
+                    <li class="nav-item me-2">
+                        <form class="d-flex">
+                            <input class="form-control search-input" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                            <i class="fa fa-search search-icon"></i>
+                        </form>
+                    </li>
+                    <!-- Nút giỏ hàng -->
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary cart-button"> <a style="text-decoration: none; color: white;" href="giohang.html"> Giỏ hàng</a><i class="fa-solid fa-cart-shopping"></i></button>
+                    </li>
+                    <!-- Tài khoản và các nút đăng nhập/đăng ký -->
+                    <li class="nav-item dropdown ms-3">
+                        <button onclick="window.location.href='taikhoan.html';" class="btn btn-outline-secondary account-button dropdown-toggle" type="button" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tài khoản <i class="fa-solid fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="dangky.html">Đăng Ký</a></li>
+                            <li><a class="dropdown-item" href="dangnhap.html">Đăng Nhập</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- MENU - END -->
+</header>
+
+
+<main class="mg-top60">
+    <section class="review">
+        <div class="container my-5">
+            <h2 class="title-hot">Đánh Giá Sản Phẩm</h2>
+
+            <!-- Phần Đánh Giá Sao -->
+            <div class="review-section mt-4 p-3">
+                <h5>Đánh giá chung</h5>
+                <div class="d-flex align-items-center">
+                    <div class="star-rating me-2">
+                        <span class="fs-4">★★★★☆</span> <!-- Đây là ví dụ 4 sao, có thể thay đổi -->
+                    </div>
+                    <span>(4/5 điểm)</span>
+                </div>
+                <p>45 lượt đánh giá</p>
+            </div>
+
+            <!-- Phần Bình Luận -->
+            <div class="mt-4">
+                <h5 class="title-hot">Bình luận từ người dùng</h5>
+
+                <!-- Bình luận 1 -->
+                <div class="card comment-card">
+                    <div class="card-body">
+                        <h6 class="card-title">Nguyễn Văn A</h6>
+                        <div class="star-rating mb-2">
+                            <span>★★★★☆</span> <!-- Ví dụ 4 sao -->
+                        </div>
+                        <p class="card-text">Sản phẩm rất tốt, đáng mua!</p>
+                        <small class="text-muted">Đã đánh giá vào ngày 1 tháng 11, 2024</small>
+                    </div>
+                </div>
+
+                <!-- Bình luận 2 -->
+                <div class="card comment-card">
+                    <div class="card-body">
+                        <h6 class="card-title">Trần Thị B</h6>
+                        <div class="star-rating mb-2">
+                            <span>★★★☆☆</span> <!-- Ví dụ 3 sao -->
+                        </div>
+                        <p class="card-text">Chất lượng ổn nhưng giao hàng hơi chậm.</p>
+                        <small class="text-muted">Đã đánh giá vào ngày 3 tháng 11, 2024</small>
+                    </div>
+                </div>
+
+                <!-- Form thêm bình luận -->
+                <div class="mt-4">
+                    <h5 class="title-hot">Viết đánh giá của bạn</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Tên</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Đánh giá</label>
+                            <select class="form-select" id="rating" required>
+                                <option value="5">5 sao</option>
+                                <option value="4">4 sao</option>
+                                <option value="3">3 sao</option>
+                                <option value="2">2 sao</option>
+                                <option value="1">1 sao</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Bình luận</label>
+                            <textarea class="form-control" id="comment" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="button btn-mid">Gửi đánh giá</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <!-- các icon và dịch vụ footer  -->
+    <div class="container">
+        <div class="row row-cols-4">
+            <div class="service">
+                <i class="fa-solid fa-truck-fast service-icon"></i>
+                <div class="service-infor">
+                    <p class="service-title">Free shipping</p> <br>
+                    <p class="service-st">Miễn phí vận chuyển</p>
+                    <!-- st là small text  -->
+                </div>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-square-phone service-icon"></i>
+                <div class="service-infor">
+                    <p class="service-title">24/7 support</p> <br>
+                    <p class="service-st">Hỗ trợ 24/7</p>
+                    <!-- st là small text  -->
+                </div>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-square-check service-icon"></i>
+                <div class="service-infor">
+                    <p class="service-title">Good quality</p> <br>
+                    <p class="service-st">Chất lượng tốt</p>
+                    <!-- st là small text  -->
+                </div>
+            </div>
+            <div class="service">
+                <i class="fa-brands fa-cc-visa service-icon"></i>
+                <div class="service-infor">
+                    <p class="service-title">Easy payment</p> <br>
+                    <p class="service-st">Thanh toán dễ dàng</p>
+                    <!-- st là small text  -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end  các icon và dịch vụ footer  -->
+
+    <hr>
+
+    <!-- thông tin chi tiết ở footer  -->
+    <div class="container">
+        <div class="row row-cols-4">
+            <!-- logo  -->
+            <div class="footer-infor">
+                <p class="service-logo">logo</p>
+            </div>
+            <!-- end logo  -->
+
+            <!-- liên kết  -->
+            <div class="footer-infor">
+                <div class="service-title">Links</div>
+                <a class="service-link" href="#">Giới thiệu</a>
+                <br>
+                <a class="service-link" href="lienhe.html">Liên Hệ</a>
+                <br>
+                <a class="service-link" href="">Bài viết</a>
+                <br>
+                <a class="service-link" href="sanpham.html">Sản phẩm</a>
+            </div>
+            <div class="footer-infor">
+                <div class="service-title">Danh mục</div>
+                <a class="service-link" href="">SP mới</a>
+                <br>
+                <a class="service-link" href="">SP bán chạy</a>
+                <br>
+                <a class="service-link" href="">SP khuyến mãi và ưu đãi</a>
+                <br>
+            </div>
+            <div class="footer-infor">
+                <div class="service-title">Thông tin</div>
+                <a class="service-link" href="">Điện thoại: 0888.303.384</a>
+                <br>
+                <a class="service-link" href="">Email: tiennttps39163@gmail.com</a>
+
+                <!-- các icon theo dõi  -->
+                <div class="service-follow">
+                    <div class="service-title">Theo dõi</div>
+                    <!-- icon các mạng xã hội  -->
+                    <a class="service-link" href="#"><i class="fa-brands fa-square-facebook service-social-icon"></i></a>
+                    <a class="service-link" href="#"><i class="fa-brands fa-square-youtube service-social-icon"></i></a>
+                    <a class="service-link" href="#"><i class="fa-brands fa-telegram service-social-icon"></i></a>
+                    <a class="service-link" href="#"><i class="fa-brands fa-discord service-social-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        Copyright 2024  @ FineWines
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="hienmk.js"></script>
+</body>
+</html>
+
+
+
+
